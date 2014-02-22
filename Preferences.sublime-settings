@@ -1,0 +1,12 @@
+{
+	"color_scheme": "Packages/User/Monokai (SL).tmTheme",
+	"font_size": 19,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"line_numbers": true,
+	"rulers": [80, 120],
+	"tab_size": 4,
+	"translate_tabs_to_spaces": true,
+}
