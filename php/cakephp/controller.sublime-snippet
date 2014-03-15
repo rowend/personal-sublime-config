@@ -1,0 +1,33 @@
+<snippet>
+    <content><![CDATA[
+<?php
+    class ${1:Text}Controller extends AppController {
+
+        function add() {
+
+        }
+
+        function delete($id=null) {
+
+        }
+
+        function edit($id=null) {
+
+        }
+
+        function index() {
+
+        }
+
+        function view($id=null) {
+
+        }
+
+    }
+?>
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>phpcakephpcontroller</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <!-- <scope>source.python</scope> -->
+</snippet>
