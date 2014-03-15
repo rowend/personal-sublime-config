@@ -7,11 +7,11 @@
 
         }
 
-        function delete($id=null) {
+        function delete(\$id=null) {
 
         }
 
-        function edit($id=null) {
+        function edit(\$id=null) {
 
         }
 
@@ -19,7 +19,7 @@
 
         }
 
-        function view($id=null) {
+        function view(\$id=null) {
 
         }
 
