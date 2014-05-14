@@ -21,5 +21,6 @@
     "save_on_focus_lost": true,
     "auto_close_tags": true,
     "show_encoding": true,
-    "remember_open_files": true
+    "remember_open_files": true,
+    "word_wrap": false
 }
