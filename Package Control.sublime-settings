@@ -1,0 +1,28 @@
+{
+	"installed_packages":
+	[
+		"AdvancedNewFile",
+		"Autoprefixer",
+		"BracketHighlighter",
+		"DocBlockr",
+		"Emmet",
+		"FileDiffs",
+		"Gist",
+		"Git",
+		"GitGutter",
+		"Http Requester",
+		"LESS",
+		"Nettuts+ Fetch",
+		"PlainTasks",
+		"Pretty JSON",
+		"Puppet",
+		"SFTP",
+		"SideBarEnhancements",
+		"SublimeCodeIntel",
+		"SublimeLinter",
+		"SublimeLinter-coffee",
+		"SublimeLinter-jshint",
+		"SublimeLinter-php",
+		"Tag"
+	]
+}
