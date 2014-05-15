@@ -1,26 +1,32 @@
 {
-	"color_scheme": "Packages/User/Monokai (SL).tmTheme",
+	"auto_close_tags": true,
+	"auto_match_enabled": true,
+	"color_scheme": "Packages/Color Scheme - Default/Solarized (Light).tmTheme",
+	"ensure_newline_at_eof_on_save": true,
 	"font_size": 19,
-	"ignored_packages":[],
+	"highlight_line": true,
+	"ignored_packages":
+	[
+	],
 	"line_numbers": true,
-	"rulers": [80, 120],
+	"match_brackets": true,
+	"match_brackets_angle": false,
+	"match_brackets_braces": true,
+	"match_brackets_square": true,
+	"match_selection": true,
+	"match_tags": true,
+	"remember_open_files": true,
+	"rulers":
+	[
+		80,
+		120
+	],
+	"save_on_focus_lost": true,
+	"show_encoding": true,
 	"tab_size": 4,
 	"translate_tabs_to_spaces": true,
 	"trim_automatic_white_space": true,
-	"word_wrap": "auto",
-	"auto_match_enabled": true,
-	"highlight_line": true,
-	"match_brackets": true,
-    "match_brackets_square": true,
-    "match_brackets_braces": true,
-    "match_brackets_angle": false,
-    "match_tags": true,
-    "match_selection": true,
-    "trim_trailing_white_space_on_save": true,
-    "ensure_newline_at_eof_on_save": true,
-    "save_on_focus_lost": true,
-    "auto_close_tags": true,
-    "show_encoding": true,
-    "remember_open_files": true,
-    "word_wrap": false
+	"trim_trailing_white_space_on_save": true,
+	"word_wrap": false,
+	"remember_open_files": true
 }
