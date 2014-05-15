@@ -2,7 +2,7 @@
     <content><![CDATA[
 <?php
     class ${1:Test} extends AppModel {
-        public $useTable = '${2:test}';
+        public \$useTable = '${2:test}';
     }
 ?>
 ]]></content>
