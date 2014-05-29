@@ -1,39 +1,39 @@
 <snippet>
     <content><![CDATA[
 <?php
-    class ${1:Test} extends CI_Controller {
+class ${1:Test} extends CI_Controller {
 
-        public function __construct() {
-            parent::__construct();
-            $this->load->model('${2:Test}model');
-        }
+    public function __construct() {
+        parent::__construct();
+        $this->load->model('${2:Test}model');
+    }
 
 
-        function add() {
-
-        }
-
-        function remove(\$id=NULL) {
-
-        }
-
-        function edit(\$id=NULL) {
-
-        }
-
-        function index() {
-
-        }
-
-        function view(\$id=NULL) {
-
-        }
-
-        function search() {
-
-        }
+    function add() {
 
     }
+
+    function remove(\$id=NULL) {
+
+    }
+
+    function edit(\$id=NULL) {
+
+    }
+
+    function index() {
+
+    }
+
+    function view(\$id=NULL) {
+
+    }
+
+    function search() {
+
+    }
+
+}
 
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
