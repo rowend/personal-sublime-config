@@ -2,7 +2,7 @@
     <content><![CDATA[
 <?php
     class ${1:Test} extends CI_Model {
-        var $table;
+        var \$table;
 
         function __construct() {
             \$this->table = '${2:test}'
