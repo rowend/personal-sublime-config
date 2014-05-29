@@ -1,0 +1,49 @@
+<snippet>
+    <content><![CDATA[
+<?php
+    class ${1:Test} extends CI_Model {
+        var $table;
+
+        function __construct() {
+            \$this->table = '${2:test}'
+        }
+
+        function get_all() {
+            return \$this->db->get(\$this->table);
+        }
+
+        function get(\$id) {
+            \$where = array(
+                'id' => $id
+            );
+            \$obj = \$this->db->get_where(\$this->table, \$where);
+        }
+
+        function add() {
+            \$data = \$this->input->post();
+            \$this->db->insert(\$this->table, \$data);
+        }
+
+        function edit() {
+            \$where = array(
+                'id' => \$this->input->post('id')
+            );
+            \$data = \$this->input->post();
+            unset(\$data['id']);
+            \$this->db->update(\$this->table, \$data, \$where);
+        }
+
+        function remove() {
+            \$where = array(
+                'id' => \$this->input->post('id')
+            );
+            $this->db->delete(\$this->table, $where);
+        }
+    }
+
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>phpcodeignitermodel</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <!-- <scope>source.python</scope> -->
+</snippet>

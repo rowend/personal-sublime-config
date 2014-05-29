@@ -4,7 +4,7 @@
     class ${1:Test} extends AppModel {
         public \$useTable = '${2:test}';
     }
-?>
+
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>phpcakephpmodel</tabTrigger>
