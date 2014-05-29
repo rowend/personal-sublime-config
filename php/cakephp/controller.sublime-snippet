@@ -1,17 +1,17 @@
 <snippet>
     <content><![CDATA[
 <?php
-    class ${1:Text}Controller extends AppController {
+    class ${1:Test}Controller extends AppController {
 
         function add() {
 
         }
 
-        function delete(\$id=null) {
+        function delete(\$id=NULL) {
 
         }
 
-        function edit(\$id=null) {
+        function edit(\$id=NULL) {
 
         }
 
@@ -19,7 +19,7 @@
 
         }
 
-        function view(\$id=null) {
+        function view(\$id=NULL) {
 
         }
 

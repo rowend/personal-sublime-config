@@ -1,17 +1,17 @@
 <snippet>
     <content><![CDATA[
 <?php
-    class ${1:Text} extends CI_Controller {
+    class ${1:Test} extends CI_Controller {
 
         function add() {
 
         }
 
-        function remove(\$id=null) {
+        function remove(\$id=NULL) {
 
         }
 
-        function edit(\$id=null) {
+        function edit(\$id=NULL) {
 
         }
 
@@ -19,7 +19,7 @@
 
         }
 
-        function view(\$id=null) {
+        function view(\$id=NULL) {
 
         }
 
