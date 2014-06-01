@@ -3,8 +3,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>${1:title}</title>
         <meta charset="utf-8" />
+        <title>${1:title}</title>
     </head>
     <body>
         ${2:title}
