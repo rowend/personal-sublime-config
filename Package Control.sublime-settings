@@ -1,4 +1,7 @@
 {
+	"in_process_packages":
+	[
+	],
 	"installed_packages":
 	[
 		"AdvancedNewFile",
@@ -7,7 +10,6 @@
 		"BracketHighlighter",
 		"CoffeeScript",
 		"ColorPicker",
-		"copy-file-name",
 		"Djaneiro",
 		"DocBlockr",
 		"Emmet",
@@ -32,12 +34,12 @@
 		"SetDjangoSyntax",
 		"SFTP",
 		"SideBarEnhancements",
-		"SublimeCodeIntel",
+		"Stylus",
 		"SublimeLinter",
 		"SublimeLinter-coffee",
 		"SublimeLinter-jshint",
-		"SublimeLinter-php",
 		"SublimeLinter-pep8",
+		"SublimeLinter-php",
 		"SublimeRope",
 		"Tag",
 		"Twitter Bootstrap Snippets"
