@@ -6,7 +6,7 @@ class ${1:Name}Controller < ApplicationController
   before_action :get_model, only: [:show, :edit, :delete, :update, :destroy]
 
   def index
-    @${2:collection} = params[:${3:Test}] ? make_search : ${4:Test}.paginate(page: params[:page])
+    @${2:collectionmodelnameplural} = params[:${3:modelname}] ? make_search : ${4:ClassModel}.paginate(page: params[:page])
   end
 
   def search; end
