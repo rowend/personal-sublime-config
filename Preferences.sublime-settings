@@ -7,11 +7,11 @@
 	"highlight_line": true,
 	"ignored_packages":
 	[
-		"PlainTasks",
-		"Markdown Preview",
-		"SideBarEnhancements",
 		"SublimeLinter",
-		"SublimeLinter-jshint"
+		"Markdown Preview",
+		"SublimeLinter-jshint",
+		"PlainTasks",
+		"SideBarEnhancements"
 	],
 	"line_numbers": true,
 	"match_brackets": true,
