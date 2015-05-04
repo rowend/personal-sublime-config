@@ -6,7 +6,7 @@ class ${1:Name}Controller < ApplicationController
   before_action :get_model, only: [:show, :edit, :delete, :update, :destroy]
 
   def index
-    @${2:collectionmodelnameplural} = params[:${3:modelname}] ? make_search : ${4:ClassModel}.paginate(page: params[:page])
+    @${2:variable-name-plural-collection-from-model} = params[:${3:model-name-singular-lowercase}] ? make_search : ${4:ClassModel}.paginate(page: params[:page])
   end
 
   def search; end
@@ -14,7 +14,7 @@ class ${1:Name}Controller < ApplicationController
   def show; end
 
   def new
-    @${5:Test} = ${6:Test}.new
+    @${5:variable-name-singular-model} = ${6:ClassModel}.new
   end
 
   def edit; end
