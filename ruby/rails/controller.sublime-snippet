@@ -22,9 +22,10 @@ class ${1:Name}Controller < ApplicationController
   def delete; end
 
   def create
-    ${7:Test} = ${8:Test}.new allowed_params
-    if ${9:Test}.save
-      redirect_to ${10:Test}_path
+    ${7:variable-name-singular-model} = ${8:ClassModel}.new allowed_params
+    if ${9:variable-name-singular-model}.save
+      flash[:success] = 'registro agregado con exito'
+      redirect_to ${10:path-name-plural-model-class}_path
     else
       render :new
     end
