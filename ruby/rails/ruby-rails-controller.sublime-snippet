@@ -1,78 +1,29 @@
 <snippet>
-    <content><![CDATA[
+  <content><![CDATA[
 
-class ${1:Name}Controller < ApplicationController
-
-  before_action :get_model, only: [:show, :edit, :delete, :update, :destroy]
-
-  def index
-    @${2:variable-name-plural-collection-from-model} = params[:${3:model-name-singular-lowercase}] ? make_search : ${4:ClassModel}.paginate(page: params[:page])
-  end
+  def index; end
 
   def search; end
 
   def show; end
 
-  def new
-    @${5:variable-name-singular-model} = ${6:ClassModel}.new
-  end
+  def new; end
 
   def edit; end
 
   def delete; end
 
-  def create
-    ${7:variable-name-singular-model} = ${8:ClassModel}.new allowed_params
-    if ${9:variable-name-singular-model}.save
-      flash[:success] = 'registro agregado con exito'
-      redirect_to ${10:path-name-plural-model-class}_path
-    else
-      render :new
-    end
-  end
+  def create; end
 
-  def update
-    if @${11:@variable-name-singula-name}.update allowed_params
-      flash[:success] = 'registro modificado con exito'
-      redirect_to ${12:path-name-plural-model-class}_path
-    else
-      render :edit
-    end
-  end
+  def update; end
 
-  def destroy
-    @${13:Test}.destroy
-    redirect_to students_path
-  end
+  def destroy; end
 
   private
 
-  def get_model
-    @${14:Test} = ${15:Test}.find params[:id]
-  end
+  def get_params; end
 
-  def allowed_params
-    params.require(:${16:Test}).permit ${17:Test}_parameters
-  end
-
-  def make_search
-    #students = params[:student]
-    #sql = 'name LIKE :name
-    #        AND last_name LIKE :last_name
-    #        AND second_last_name LIKE :second_last_name '
-    #fields = {
-    #  name: "%#{students[:name]}%",
-    #  last_name: "%#{students[:last_name]}%",
-    #  second_last_name: "%#{students[:second_last_name]}%"
-    #}
-    #if students.key? :gender
-    #  sql << ' AND gender = :gender '
-    #  fields[:gender] = students[:gender] == 'true' ? true : false
-    #end
-    #Student.where(sql, fields).paginate page: params[:page]
-  end
-
-end
+  def search_process; end
 
 
 ]]></content>
