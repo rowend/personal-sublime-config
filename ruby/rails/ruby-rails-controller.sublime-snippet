@@ -32,8 +32,9 @@ class ${1:Name}Controller < ApplicationController
   end
 
   def update
-    if @${11:Test}.update allowed_params
-      redirect_to ${12:Test}_path
+    if @${11:@variable-name-singula-name}.update allowed_params
+      flash[:success] = 'registro modificado con exito'
+      redirect_to ${12:path-name-plural-model-class}_path
     else
       render :edit
     end
