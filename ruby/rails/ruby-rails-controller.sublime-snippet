@@ -5,15 +5,30 @@
 
   def search; end
 
-  def show; end
+  def show
+    @@variable_name_singular_from_model = ModelName.find params[:id]
+  end
 
-  def new; end
+  def new
+    @@variable_name_singular_from_model_from_model = ModelName.new
+  end
 
-  def edit; end
+  def edit
+    @@variable_name_singular_from_model = ModelName.find params[:id]
+  end
 
-  def delete; end
+  def delete
+    @@variable_name_singular_from_model = ModelName.find params[:id]
+  end
 
-  def create; end
+  def create
+    @variable_name_singular_from_model = ModelName.new get_params
+    if @variable_name_singular_from_model.save
+      redirec_to model_plural_name_path
+    else
+      render 'new'
+    end
+  end
 
   def update; end
 
