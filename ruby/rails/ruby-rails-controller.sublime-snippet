@@ -6,37 +6,63 @@
   def search; end
 
   def show
-    @@variable_name_singular_from_model = ModelName.find params[:id]
+    @variable_name_singular_from_model = ModelName.find params[:id]
   end
 
   def new
-    @@variable_name_singular_from_model_from_model = ModelName.new
+    @variable_name_singular_from_model = ModelName.new
   end
 
   def edit
-    @@variable_name_singular_from_model = ModelName.find params[:id]
+    @variable_name_singular_from_model = ModelName.find params[:id]
   end
 
   def delete
-    @@variable_name_singular_from_model = ModelName.find params[:id]
+    @variable_name_singular_from_model = ModelName.find params[:id]
   end
 
   def create
     @variable_name_singular_from_model = ModelName.new get_params
     if @variable_name_singular_from_model.save
-      redirec_to model_plural_name_path
+      message = 'registro agregadó con exito'
+      flash[:success] = message
+      redirect_to model_plural_name_path
     else
       render 'new'
     end
   end
 
-  def update; end
+  def update
+    @variable_name_singular_from_model = ModelName.find params[:id]
+    if @variable_name_singular_from_model.update get_params
+      message = 'registro modificadó con éxito'
+      flash[:success] = message
+      redirect_to model_plural_name_path
+    else
+      render 'edit'
+    end
+  end
 
-  def destroy; end
+  def destroy
+    @variable_name_singular_from_model = ModelName.find params[:id]
+    @variable_name_singular_from_model.destroy
+    message = 'registro eliminadó con éxito'
+    flash[:success] = message
+    redirect_to model_plural_name_path
+  end
 
   private
 
-  def get_params; end
+  def get_params
+    fields = [
+      :field_1,
+      :field_2,
+      :field_3,
+      :field_4,
+      :field_5,
+    ]
+    params.require(:model_name_singular).permit fields
+  end
 
   def search_process; end
 
