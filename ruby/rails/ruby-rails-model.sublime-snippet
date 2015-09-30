@@ -22,6 +22,39 @@
   validates :field_name, inclusion: {in: list_fields_choices}
   validates :field_name, format: {with: REGEX}
 
+  before_validation :downcase_data
+  before_destroy :can_destroy_it?
+  before_create :can_add_it?
+  before_save :before_save_method_name
+
+  paginates_per number
+
+  private
+
+  def before_save_method_name
+    something here
+  end
+
+  def can_add_it?
+    if something
+      errors[:base_or_attr] = 'error text'
+      return false
+    end
+  end
+
+  def can_destroy_it?
+    if references.count > 0
+      errors[:base_or_attr] = 'error text'
+      return false
+    end
+  end
+
+  def downcase_data
+    self.attr = self.attr.mb_chars.downcase.to_s
+  end
+
+
+
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>rubyrailsmodel</tabTrigger>
