@@ -9,21 +9,15 @@
 
   def search; end
 
-  def show
-    @variable_model_name_singular = ModelName.find params[:id]
-  end
+  def show; end
 
   def new
     @variable_model_name_singular = ModelName.new
   end
 
-  def edit
-    @variable_model_name_singular = ModelName.find params[:id]
-  end
+  def edit; end
 
-  def delete
-    @variable_model_name_singular = ModelName.find params[:id]
-  end
+  def delete; end
 
   def create
     @variable_model_name_singular = ModelName.new get_params
@@ -36,7 +30,6 @@
   end
 
   def update
-    @variable_model_name_singular = ModelName.find params[:id]
     if @variable_model_name_singular.update get_params
       message = 'registro modificadó con éxito'
       redirect_to model_plural_name_path, flash: {success: message}
@@ -46,7 +39,6 @@
   end
 
   def destroy
-    @variable_model_name_singular = ModelName.find params[:id]
     if @variable_model_name_singular.destroy
       message = 'registro eliminadó con éxito'
       redirect_to model_plural_name_path, flash: {success: message}
