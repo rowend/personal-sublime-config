@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+    if query_string.has_key? 'boolean_field_name'
+      sql << ' AND boolean_field_name = :boolean_field_name '
+      fields[:boolean_field_name] = query_string[:boolean_field_name] == 'true' ? true : false
+    end
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>rubyrailscontrollersearchboolean</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <!-- <scope>source.python</scope> -->
+</snippet>

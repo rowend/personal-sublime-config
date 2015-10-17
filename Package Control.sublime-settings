@@ -1,6 +1,11 @@
 {
+	"bootstrapped": true,
 	"in_process_packages":
 	[
+		"CoffeeScript",
+		"RunCommand",
+		"SetDjangoSyntax",
+		"SublimeRope"
 	],
 	"installed_packages":
 	[
