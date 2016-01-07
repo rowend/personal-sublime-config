@@ -1,11 +1,11 @@
 <snippet>
     <content><![CDATA[
-    def index
-        @${1:variable_model_name_plural} = ${2:Model}.all
+    def new
+        @${1:variable_model_name_singular} = ${2:Model}.new
     end
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-    <tabTrigger>rrci</tabTrigger>
+    <tabTrigger>rrcn</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <!-- <scope>source.python</scope> -->
 </snippet>
