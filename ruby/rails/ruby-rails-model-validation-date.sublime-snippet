@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+    validates :field_name, date: true
+    validates :field_name, date: {before: field_name}
+    validates :field_name, date: {after: field_name}
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>rubyrailsmodelvalidationdate</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <!-- <scope>source.python</scope> -->
+</snippet>

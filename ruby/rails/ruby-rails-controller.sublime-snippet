@@ -76,16 +76,6 @@
       field_3: "%#{query_string[:field_3]}%",
     }
 
-    if query_string.has_key?(:foreing_model_name_singular_id) && !query_string[:foreing_model_name_singular_id].empty?
-      sql << ' AND foreing_model_name_singular_id = :foreing_model_name_singular_id '
-      fields[:foreing_model_name_singular_id] = query_string[:foreing_model_name_singular_id]
-    end
-
-    if query_string.has_key? 'boolean_field_name'
-      sql << ' AND boolean_field_name = :boolean_field_name '
-      fields[:boolean_field_name] = query_string[:boolean_field_name] == 'true' ? true : false
-    end
-
     ModelName.where(sql, fields).page params[:page]
   end
 

@@ -3,28 +3,7 @@
   has_many :plural_name_table
   belongs_to :singula_name_table
 
-  validates :field_name, presence: true
-  validates :field_name, length: {maximum: number}
-  validates :field_name, length: {minimum: number}
-  validates :field_name, length: {in: number..number}
-  validates :field_name, length: {is: number}
-  validates :field_name, uniqueness: true
-  validates :field_name, uniqueness: {
-    scope: :field_name,
-  }
-  validates :field_name, uniqueness: {
-    scope: [:field_name, :field_name, :field_name]
-  }
-  validates :size, numericality: {
-    only_integer: true,
-    greater_than: number_range,
-    less_than: number_range,
-  }
-  validates :field_name, date: true
-  validates :field_name, date: {before: field_name}
-  validates :field_name, date: {after: field_name}
-  validates :field_name, inclusion: {in: list_fields_choices}
-  validates :field_name, format: {with: REGEX}
+  # Validations
 
   before_validation :downcase_data
   before_destroy :can_destroy_it?
