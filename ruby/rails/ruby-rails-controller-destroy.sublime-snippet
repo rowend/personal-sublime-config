@@ -1,11 +1,13 @@
 <snippet>
     <content><![CDATA[
-    def new
-        @${1:variable_model_name_singular} = ${2:Model}.new
+    def destroy
+        @${1:variable_model_name_singular} = ${2:Model}.find params[:id]
+        @${3:variable_model_name_singular}.destroy
+        redirect_to ${4:plural_resource}_path
     end
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-    <tabTrigger>rrcnew</tabTrigger>
+    <tabTrigger>rrcdestroy</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <!-- <scope>source.python</scope> -->
 </snippet>

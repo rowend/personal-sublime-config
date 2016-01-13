@@ -1,11 +1,16 @@
 <snippet>
     <content><![CDATA[
-    def show
+    def update
         @${1:variable_model_name_singular} = ${2:Model}.find params[:id]
+        if @${1:variable_model_name_singular}.update get_params
+            redirect_to ${3:plural_resource}_path
+        else
+            render 'edit'
+        end
     end
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-    <tabTrigger>rrcshow</tabTrigger>
+    <tabTrigger>rrcupdate</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <!-- <scope>source.python</scope> -->
 </snippet>
