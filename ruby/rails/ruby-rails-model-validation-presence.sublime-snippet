@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+    validates :${1:field_name}, presence: true
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>rormodelvalidationpresence</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <!-- <scope>source.python</scope> -->
+</snippet>
