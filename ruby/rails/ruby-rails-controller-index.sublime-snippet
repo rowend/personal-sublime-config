@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+
+    def index
+        @${1:model_name_plural_variable} = params[:${1:model_name_singular_symbol}].present? ? make_search : ${1:model}.page(params[:page])
+    end
+
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>rorcontrollerindex</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <!-- <scope>source.python</scope> -->
+</snippet>
