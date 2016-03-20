@@ -1,14 +1,13 @@
 <snippet>
     <content><![CDATA[
 
-    def search
+    def new
         @${1:model_name_singular_variable} = ${2:model}.new
-        @${3:model_name_singular_variable}.${4:attr} = nil
     end
 
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-    <tabTrigger>rorcontrollersearch</tabTrigger>
+    <tabTrigger>rorcontrollernew</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <!-- <scope>source.python</scope> -->
 </snippet>
