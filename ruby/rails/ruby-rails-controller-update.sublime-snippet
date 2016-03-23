@@ -1,13 +1,19 @@
 <snippet>
     <content><![CDATA[
 
-    def delete
+    def update
         @${1:model_name_singular_variable} = ${2:model}.find params[:id]
+        if @${1:model_name_singular_variable}.update get_params
+            flash[:success] = 'registro modificado con éxito'
+            redirect_to ${1:model_name_plural}_path
+        else
+            render 'edit'
+        end
     end
 
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-    <tabTrigger>rorcontrollerdelete</tabTrigger>
+    <tabTrigger>rorcontrollerupdate</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <!-- <scope>source.python</scope> -->
 </snippet>
