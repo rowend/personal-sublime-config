@@ -1,7 +1,7 @@
 <snippet>
     <content><![CDATA[
 
-    def update
+    def destroy
         @${1:model_name_singular_variable} = ${2:model}.find params[:id]
         if @${1:model_name_singular_variable}.destroy
             flash[:success] = 'registro eliminado con éxito'
