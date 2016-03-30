@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+    validates :${1:field_name}, format: { with: ${2:REGEX} }
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>rormodelvalidationformat</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <!-- <scope>source.python</scope> -->
+</snippet>
