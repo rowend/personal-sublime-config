@@ -13,7 +13,12 @@
 
         if ${1:variable_name_like_model}[:${8:foreign_model_id}].present?
             sql << ' AND ${8:foreign_model_id} = :${8:foreign_model_id} '
-            fields[:${8:foreign_model_id] = ${1:variable_name_like_model}[:${8:foreign_model_id]
+            fields[:${8:foreign_model_id}] = ${1:variable_name_like_model}[:${8:foreign_model_id}]
+        end
+
+        if ${1:variable_name_like_model}[:${9:boolean_field}].present?
+            sql << ' AND ${9:boolean_field} = :${9:boolean_field} '
+            fields[:${9:boolean_field}] = ${1:variable_name_like_model}[:${9:boolean_field}] == 'true' ? true : false
         end
 
         ${7:Model}.where(sql, fields).page params[:page]
