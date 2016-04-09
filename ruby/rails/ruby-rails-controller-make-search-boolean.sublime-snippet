@@ -1,0 +1,14 @@
+<snippet>
+    <content><![CDATA[
+
+    if ${1:variable_name_like_model}[:${9:boolean_field}].present?
+        sql << ' AND ${9:boolean_field} = :${9:boolean_field} '
+        fields[:${9:boolean_field}] = ${1:variable_name_like_model}[:${9:boolean_field}] == 'true' ? true : false
+    end
+
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>rorcontrollermakesearchboolean</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <!-- <scope>source.python</scope> -->
+</snippet>
