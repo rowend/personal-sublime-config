@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+    <% flash.each do |name, message| %>
+        <%= content_tag :div, message, class: name %>
+    <% end %>
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>rorviewflashmessages</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <!-- <scope>source.python</scope> -->
+</snippet>

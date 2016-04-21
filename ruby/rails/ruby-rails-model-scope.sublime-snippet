@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+        scope :${1:name}, where(${2:condition})
+        scope :${3:name}, -> (${4:param_1}, ${5:param_2}) {
+            code with where
+        }
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>rormodelscope</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <!-- <scope>source.python</scope> -->
+</snippet>
