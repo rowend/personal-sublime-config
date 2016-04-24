@@ -1,0 +1,11 @@
+
+<snippet>
+    <content><![CDATA[
+    <%= paginate @${1:all-objects} %>
+    <%= page_entries_info @${1:all-objects} %>
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>rorviewpaginate</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <!-- <scope>source.python</scope> -->
+</snippet>
